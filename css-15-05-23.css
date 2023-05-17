@@ -1,0 +1,42 @@
+nav{
+    width: 100%;
+    height: 40px;
+    background-color: darkturquoise;
+}
+ul li{
+    list-style-type: none;
+    float: left;
+    margin: 5px;
+    padding: 5px 40px;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    
+
+}
+a:hover{
+    background-color: rgb(240, 247, 247);
+    color: #FFE484;
+    border-radius: 2px;
+}
+
+.search-option a{
+   margin: 5px;
+   padding: 0 5px;
+    
+
+}
+form{
+    background-color: rgb(184, 238, 238);
+}
+
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.black{
+    background-color: black;
+    color: white;
