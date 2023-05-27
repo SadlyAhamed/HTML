@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Name</label>
+    <input type="text" id="name" oninput="valid()">
+    <p id="valid"></p>
+    <input type="button" value="ok" id="buttonOk" onclick="nam()"><br>
+
+    <p id="textOn"></p>
+
+
+    <script>
+        function valid(){
+            let name =document.getElementById("name").value;
+
+
+            if(name.length>=3 && name.length<=10){
+                document.getElementById('valid').innerHTML="good";
+                document.getElementById('valid').style.color="green";
+                document.getElementById('buttonOk').style.visibility="visible";
+                document.getElementById("textOn").innerHTML="Welcome "+ name;
+            }
+
+            else{
+                document.getElementById('valid').innerHTML="carrecter must 10"
+                document.getElementById('valid').style.color="red";
+                document.getElementById('buttonOk').style.visibility="hidden";
+                document.getElementById("textOn").innerHTML=" ";
+            }
+
+        }
+    </script>
+</body>
+</html>
