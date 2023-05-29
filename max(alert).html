@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- <script>
+        let max=0;
+        let  min=999999999;
+for(let i=1; i<=2; i++){
+let input=prompt("please enter number "+i);
+
+if(max<input){
+max=input;
+}
+if(min>input){
+min=input;
+}
+}
+alert("max no is "+max+" min no is "+min);
+
+    </script> -->
+    <script>
+        let n=prompt("pls enter no ")
+        let max=0;
+        let  min=999999999;
+        let avarage=0;
+        let total=0
+for(let i=1; i<=n; i++){
+let input=prompt("please enter number "+i);
+total+=parseInt(input);
+
+if(max<input){
+max=input;
+
+}
+
+if(min>input){
+min=input;
+}
+
+}
+avarage=total/n;
+
+alert("max no is "+max+" min no is "+min+" total "+total+" avarage is "+avarage );
+
+    </script>
+</body>
+</html>
