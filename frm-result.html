@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+         <h1>Form Result</h1>
+    <pre>
+                <h3>Name</h3>
+        <label id="name"></label>
+
+                <h3>Email</h3>
+        <label id="email"></label>
+
+                <h3>Password</h3>
+        <label id="password"></label>
+
+                <h3>Gender</h3>
+        <label id="gender"></label>
+
+                <h3>subject</h3>
+        <label id="subject"></label>
+
+        <h3>Hobby</h3>
+        <label id="hobby"></label>
+
+                <h3>About</h3>
+        <label id="about"></label>
+
+        
+
+    </pre>
+
+    <script>
+
+document.getElementById("name").innerHTML=localStorage.getItem("new-name");
+document.getElementById("email").innerHTML=localStorage.getItem("new-email");
+document.getElementById("password").innerHTML=localStorage.getItem("new-password");
+document.getElementById("gender").innerHTML=localStorage.getItem("new-gender");
+document.getElementById("subject").innerHTML=localStorage.getItem("new-subject");
+document.getElementById("hobby").innerHTML=localStorage.getItem("s_hobby");
+document.getElementById("about").innerHTML=localStorage.getItem("s_about");
+
+    </script>
+</body>
+</html>
