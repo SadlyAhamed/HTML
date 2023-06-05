@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial</title>
+</head>
+<body>
+
+<pre>
+
+<label>number</label>
+
+<input type="text" id="number">
+
+
+<p id="result"></p>
+
+<button id="submit" onclick="fact()" value="submit">Submit</button>
+</pre>
+
+  <script>
+    
+    function fact(){
+        result=1;
+    let input=document.getElementById("number").value;
+    // let input_number=parseInt(input);
+
+for(let i=input; i>0; i--){
+     
+   
+    result*=i;
+    
+
+
+}
+document.getElementById("result").innerHTML="factorial is "+result;
+    }
+
+
+
+
+    // let input=prompt("enter a number");
+    // let result=1;
+    // for(let i=1; i<=input; i++){ 
+    //     result*=i;
+    
+    // alert("factorial number is " +result); 
+    // }
+
+  </script>
+
+</body>
+</html>

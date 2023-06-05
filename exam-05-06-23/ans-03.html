@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <label>number 1</label>
+    <input type="text" id="n1"><br>
+
+    <label>number 2</label>
+    <input type="text" id="n2"><br>
+
+    <label>number 3</label>
+    <input type="text" id="n3"><br>
+
+<button onclick=" maxNum()">max number</button><br>
+<button onclick="minNum()">min number</button><br>
+
+<p id="result"></p> -->
+
+<script>
+// function maxNum(){
+// let n1=document.getElementById("n1").value;
+// let n2=document.getElementById("n2").value;
+// let n3=document.getElementById("n3").value;
+
+//     if(n1>n2 && n1>n3){
+
+// document.getElementById("result").innerHTML="max num is "+n1;
+// }
+//     else if(n2>n1 && n2>n3){
+//     document.getElementById("result").innerHTML="max num is "+n2;
+// }
+
+//     else{
+//         document.getElementById("result").innerHTML="max num is "+n3;
+// }
+// }
+// function minNum(){
+//     let n1=document.getElementById("n1").value;
+// let n2=document.getElementById("n2").value;
+// let n3=document.getElementById("n3").value;
+
+//     if(n1<n2 && n1<n3){
+
+// document.getElementById("result").innerHTML="min num is "+n1;
+// }
+//     else if(n2<n1 && n2<n3){
+//     document.getElementById("result").innerHTML="min num is "+n2;
+// }
+
+//     else{
+//         document.getElementById("result").innerHTML="min num is "+n3;
+// }
+// }
+
+let num1=parseInt(prompt("enter 1st num"));
+let num2=parseInt(prompt("enter 2nd num"));
+let num3=parseInt(prompt("enter 3rd num"));
+
+let max=0;
+let min=0;
+
+if(num1>num2 && num1>num3){
+    max= num1;
+}
+else if(num2>num1 && num2>num3){
+    max= num2;
+}
+else{
+    max= num3;
+}
+
+if(num1<num2 && num1<num3){
+    min= num1;
+}
+else if(num2<num1 && num2<num3){
+    min= num2;
+}
+else{
+    min= num3;
+}
+alert("Max Number is "+max+" Min number is "+min);
+
+</script>
+</body>
+</html>

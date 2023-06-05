@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- prime number
+
+    <label>input</label>
+    <input type="text" id="num1"><br>
+
+    <button onclick="alartNum()">check </button>
+    <script>
+        
+  function alartNum(){
+    let num1=document.getElementById("num1").value;
+    let count=0;
+
+    for(let i=1; i<=num1; i++){
+        if(num1%i==0){
+            count=count+1;
+        }
+    }
+        if(count==2){
+    //    document.write("prime num")
+        alert("prime number");
+        }
+        else{
+            // document.write("not prime num")
+            alert("not prime number");
+        }
+
+  }
+
+  
+    </script> -->
+
+    <script>
+let startNumber=parseInt(prompt("enter starting point"));
+let endNumber=parseInt(prompt("enter end point"));
+
+// let StartNumber:number
+
+for(let i=startNumber; i<=endNumber; i++){
+let counter=0;
+
+for(let p=1; p<=i; p++){
+
+if(i%p==0){
+counter +=1;
+}
+}
+if (counter == 2){
+    document.write(i+"<br>");
+}
+}
+
+
+    </script>
+</body>
+</html>
